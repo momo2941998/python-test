@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  python:
+    build: .
+    image: python-test
+    container_name: python-01
+    command: python app/main.py
+    ports:
+      - 8000:80
